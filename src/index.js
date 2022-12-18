@@ -11,8 +11,10 @@ fetch("https://anapioficeandfire.com/api/books").then((response) => response.jso
 })
 
 }
-
 displayBooksName()
+
+
+
 //display books details
 
 const booksDetailContainer = document.getElementById('booksDetails')
