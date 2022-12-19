@@ -129,8 +129,8 @@ const contactUsListItem = document.getElementById('contactUsListItem')
 
 function makeContactUsActive() {
 
-const contactUsForm = document.getElementById('contactUsForm')
-contactUsForm.style.display = "inline"
+const contactUsForm = document.getElementById('contactUsForm');
+contactUsForm.style.display = "inline";
 
 const booksList = document.getElementById('booksList');
 booksList.style.display = "none";
@@ -141,7 +141,13 @@ booksDetails.style.display = "none";
 const aboutUs = document.getElementById('aboutUs');
     aboutUs.style.display = "none";
 }
-contactUsListItem.addEventListener('click',makeContactUsActive)
+
+
+contactUsForm.addEventListener('submit',function(event) {
+    event.preventDefault();
+
+});
+contactUsListItem.addEventListener('click',makeContactUsActive);
 
 
 
