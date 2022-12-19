@@ -1,50 +1,3 @@
-
-const form = document.getElementById("loginForm");
-function handleForm(event) { 
-    event.preventDefault();
-    //1.hiding log-in form
-
-    const logIn = document.getElementById("logIn");
-    logIn.style.display = "none";
-
-    //2.display home page
-    const main = document.getElementById("main");
-    main.style.display = "inline";
-
- } 
-form.addEventListener('submit', handleForm);
-
-//displaying the sign up form
-const sign = document.getElementById('sign');
-function displaySignUp(event) { 
-    event.preventDefault();
- //hiding log-in form
-    const logIn = document.getElementById("logIn");
-    logIn.style.display = "none"
-
-   // displaying sign up form
-
-  const signUp = document.getElementById('signUp');
-  signUp.style.display = "inline";
-
-}
-sign.addEventListener('click',displaySignUp);
-
-// displaying the log in page and hiding signup form
-
-const signUpButton = document.getElementById("signUpButton")
-
-function displayLogIn(event) { 
-    event.preventDefault();
- const signUp = document.getElementById('signUp');
-  signUp.style.display = "none";
-  const logIn = document.getElementById("logIn");
-    logIn.style.display = "inline"
-
-}
-signUpButton.addEventListener('submit',displayLogIn)
-
-
 //display books names
 const booksList = document.getElementById('booksList')
 
@@ -88,6 +41,68 @@ booksDetailContainer.insertAdjacentHTML("afterbegin",books)
 
 }
 booksList.addEventListener('click', displayBooksDetails)
+
+const form = document.getElementById("loginForm");
+
+function handleForm(event) { 
+    event.preventDefault();
+    //1.hiding log-in form
+
+    const logIn = document.getElementById("logIn");
+    logIn.style.display = "none";
+
+    //2.display home page
+    const main = document.getElementById("main");
+    main.style.display = "inline";
+
+ } 
+form.addEventListener('submit', handleForm);
+
+//displaying the sign up form
+const sign = document.getElementById('sign');
+function displaySignUp(event) { 
+    event.preventDefault();
+ //hiding log-in form
+    const logIn = document.getElementById("logIn");
+    logIn.style.display = "none"
+
+   // displaying sign up form
+
+  const signUp = document.getElementById('signUp');
+  signUp.style.display = "inline";
+
+}
+sign.addEventListener('click',displaySignUp);
+
+// displaying the log in page and hiding signup form
+
+const signupform = document.getElementById("signupform");
+
+function displayLogIn(event) { 
+    event.preventDefault();
+ const signUp = document.getElementById('signUp');
+  signUp.style.display = "none";
+  const logIn = document.getElementById("logIn");
+    logIn.style.display = "inline";
+
+}
+signupform.addEventListener('submit', displayLogIn);
+
+//displaying contents of about us
+
+function displayAboutUs() {
+    
+    const booksList = document.getElementById('booksList');
+    booksList.style.display = "none"
+
+    const aboutUs = document.getElementById('aboutUs');
+    aboutUs.style.display = "inline";
+}
+const aboutUsListItem = document.getElementById('aboutUsListItem');
+aboutUsListItem.addEventListener('click',displayAboutUs);
+
+
+
 
 
 
