@@ -1,7 +1,68 @@
-const booksList = document.getElementById('booksList')
-const list = document.getElementById('list')
+
+const form = document.getElementById("loginForm");
+function handleForm(event) { 
+    event.preventDefault();
+    //1.hiding log-in form
+
+    const logIn = document.getElementById("logIn");
+    logIn.style.display = "none";
+
+    //2.display home page
+    const main = document.getElementById("main");
+    main.style.display = "inline";
+
+ } 
+form.addEventListener('submit', handleForm);
+
+//displaying the sign up form
+const sign = document.getElementById('sign');
+function displaySignUp(event) { 
+    event.preventDefault();
+ //hiding log-in form
+    const logIn = document.getElementById("logIn");
+    logIn.style.display = "none"
+
+   // displaying sign up form
+
+  const signUp = document.getElementById('signUp');
+  signUp.style.display = "inline";
+
+}
+sign.addEventListener('click',displaySignUp);
+
+// displaying the log in page and hiding signup form
+
+/*const button = document.getElementById('"button1"')
+
+function displayLogIn(event) { 
+    event.preventDefault();
+ const signUp = document.getElementById('signUp');
+  signUp.style.display = "none";
+  const logIn = document.getElementById("logIn");
+    logIn.style.display = "inline"
+
+}
+button.addEventListener('submit',displayLogIn)*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //display books names
+const booksList = document.getElementById('booksList')
+
 function displayBooksName() {
 fetch("https://anapioficeandfire.com/api/books").then((response) => response.json()).then((data)=> {
     data.map(book => {
@@ -44,4 +105,8 @@ booksDetailContainer.insertAdjacentHTML("afterbegin",books)
 
 }
 booksList.addEventListener('click', displayBooksDetails)
+
+
+
+
     
