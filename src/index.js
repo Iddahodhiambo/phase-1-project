@@ -32,7 +32,7 @@ sign.addEventListener('click',displaySignUp);
 
 // displaying the log in page and hiding signup form
 
-/*const button = document.getElementById('"button1"')
+const signUpButton = document.getElementById("signUpButton")
 
 function displayLogIn(event) { 
     event.preventDefault();
@@ -42,22 +42,7 @@ function displayLogIn(event) {
     logIn.style.display = "inline"
 
 }
-button.addEventListener('submit',displayLogIn)*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+signUpButton.addEventListener('submit',displayLogIn)
 
 
 //display books names
@@ -73,8 +58,6 @@ fetch("https://anapioficeandfire.com/api/books").then((response) => response.jso
 
 }
 displayBooksName()
-
-
 
 //display books details
 
