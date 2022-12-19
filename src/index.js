@@ -91,6 +91,9 @@ signupform.addEventListener('submit', displayLogIn);
 //making the about us icon active
 
 function displayAboutUsDetails() {
+
+    const contactUsForm = document.getElementById('contactUsForm')
+contactUsForm.style.display = "none"
     
     const booksList = document.getElementById('booksList');
     booksList.style.display = "none"
@@ -115,8 +118,30 @@ function displayHomeDetails() {
     
     const booksDetails = document.getElementById('booksDetails');
     booksDetails.style.display = "block";
+
+  const contactUsForm = document.getElementById('contactUsForm')
+  contactUsForm.style.display = "none"
 }
 home.addEventListener('click',displayHomeDetails);
+
+//making the contact us icon active
+const contactUsListItem = document.getElementById('contactUsListItem')
+
+function makeContactUsActive() {
+
+const contactUsForm = document.getElementById('contactUsForm')
+contactUsForm.style.display = "inline"
+
+const booksList = document.getElementById('booksList');
+booksList.style.display = "none";
+
+const booksDetails = document.getElementById('booksDetails');
+booksDetails.style.display = "none";
+
+const aboutUs = document.getElementById('aboutUs');
+    aboutUs.style.display = "none";
+}
+contactUsListItem.addEventListener('click',makeContactUsActive)
 
 
 
