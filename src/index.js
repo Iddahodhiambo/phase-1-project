@@ -1,3 +1,23 @@
+
+function searchForm(){
+    const searchText = document.getElementById("searchText");
+    displayNewList(searchText.value);
+    
+}
+function displayNewList(startingLike){
+    const booksList = document.getElementById('booksList');
+    booksList.innerHTML = "";
+    fetch("https://anapioficeandfire.com/api/books").then((response) => response.json()).then((data)=> {
+    data.map(book => {
+        const bookName = book.name;
+        if(bookName.toUpperCase().startsWith(startingLike.toUpperCase())){
+            const markup = `<p>${book.name}</p>`
+            booksList.insertAdjacentHTML('afterbegin',markup)
+        }
+        
+    })
+})
+}
 //display books names
 const booksList = document.getElementById('booksList')
 
@@ -95,8 +115,11 @@ function displayAboutUsDetails() {
     const contactUsForm = document.getElementById('contactUsForm')
 contactUsForm.style.display = "none"
     
-    const booksList = document.getElementById('booksList');
+    const booksList = document.getElementById('container');
     booksList.style.display = "none"
+
+    const searchArea = document.getElementById('searchArea');
+    searchArea.style.display = "none"
 
     const aboutUs = document.getElementById('aboutUs');
     aboutUs.style.display = "inline";
@@ -110,7 +133,10 @@ aboutUsListItem.addEventListener('click',displayAboutUsDetails);
 //making the home icon active
 const home = document.getElementById('home');
 function displayHomeDetails() {
-    const booksList = document.getElementById('booksList');
+    const searchArea = document.getElementById('searchArea');
+    searchArea.style.display = "block"
+
+    const booksList = document.getElementById('container');
     booksList.style.display = "inline";
 
     const aboutUs = document.getElementById('aboutUs');
@@ -132,11 +158,11 @@ function makeContactUsActive() {
 const contactUsForm = document.getElementById('contactUsForm');
 contactUsForm.style.display = "inline";
 
-const booksList = document.getElementById('booksList');
-booksList.style.display = "none";
+const booksList = document.getElementById('container');
+    booksList.style.display = "none"
 
-const booksDetails = document.getElementById('booksDetails');
-booksDetails.style.display = "none";
+    const searchArea = document.getElementById('searchArea');
+    searchArea.style.display = "none"
 
 const aboutUs = document.getElementById('aboutUs');
     aboutUs.style.display = "none";

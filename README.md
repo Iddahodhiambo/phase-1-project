@@ -1,7 +1,7 @@
 # phase-1-project
  
 ​
-## Descriptiona
+## Description
 ​
 This is  books website,that displays the details of different books and has a purchase  button for purchasing different kind of books
 ​

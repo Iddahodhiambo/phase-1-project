@@ -10,6 +10,7 @@
     
 </head>
 <body>
+    
     <div id="main">
     <nav>
         <ul>
@@ -19,20 +20,26 @@
             </li>
             <li id ="contactUsListItem"><a href="#">Contact Us</a></li>
         </ul>
-        <form class = "search-form">
-            <input type = "text" placeholder = "search">
-            <button> Search </button>
-        </form>
+
+        
     </nav>
-            <div>
-                <ul id = "booksList">
+    <div id="searchArea">
+        <input id="searchText" type = "text" placeholder = "search" onkeyup="searchForm()">
 
-                </ul>
-            </div>
+    </div>
+    <section class="container" id="container">
+        <div class="one">
+            <ul id = "booksList">
 
+            </ul>
+        </div>
+        <div class="two">
             <div id = "booksDetails">
 
             </div>
+        </div>
+      </section>
+            
        </div> 
     <div id = "logIn">
         <form id="loginForm" method="post">
@@ -86,7 +93,7 @@
                     <textarea id = "textArea" input type = 'text' placeholder="Your comment"></textarea>
 
                 
-                <button type = "submit" id = "signUpButton">Send</button>
+                <button type = "submit" id = "signUpButton"><br>Send</b></button>
                 </form>
 
         

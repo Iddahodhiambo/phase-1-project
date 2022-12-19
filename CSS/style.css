@@ -68,9 +68,10 @@ font-size: 19px;
     
     
  }*/
- #booksList{
+ #booksListDiv{
    font-size: 20px;
-   
+   width: 300px;
+   margin-right: 1000px;
    font-family: sans-serif;
    
    
@@ -94,12 +95,8 @@ font-size: 19px;
    
 
  }
- #booksDetails{
-   width: 680px;
-  background-color: rgba(243, 237, 238, 0.748);
-  margin-left: 320px;
-  margin-top: -415px;
-  /*box-shadow: 3px 3px 10px 4px rgb(70, 44, 49);*/
+ #searchArea{
+  margin-top: 10px;
  }
  #logIn input {
    font-size: 16px;
@@ -133,5 +130,24 @@ font-size: 19px;
 
 
 
+ .container {
+  width: 80%;
+  height: 610px;
+  background: aqua;
+  margin: auto;
+  padding: 10px;
+}
 
+.one {
+  width: 15%;
+  height: 600px;
+  background: red;
+  float: left;
+}
+
+.two {
+  margin-left: 15%;
+  height: 600px;
+  background-color: rgba(243, 237, 238, 0.748);
+}
 
