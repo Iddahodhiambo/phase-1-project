@@ -88,19 +88,35 @@ function displayLogIn(event) {
 }
 signupform.addEventListener('submit', displayLogIn);
 
-//displaying contents of about us
+//making the about us icon active
 
-function displayAboutUs() {
+function displayAboutUsDetails() {
     
     const booksList = document.getElementById('booksList');
     booksList.style.display = "none"
 
     const aboutUs = document.getElementById('aboutUs');
     aboutUs.style.display = "inline";
+    
+    const booksDetails = document.getElementById('booksDetails');
+    booksDetails.style.display = "none";
 }
 const aboutUsListItem = document.getElementById('aboutUsListItem');
-aboutUsListItem.addEventListener('click',displayAboutUs);
+aboutUsListItem.addEventListener('click',displayAboutUsDetails);
 
+//making the home icon active
+const home = document.getElementById('home');
+function displayHomeDetails() {
+    const booksList = document.getElementById('booksList');
+    booksList.style.display = "inline";
+
+    const aboutUs = document.getElementById('aboutUs');
+    aboutUs.style.display = "none";
+    
+    const booksDetails = document.getElementById('booksDetails');
+    booksDetails.style.display = "block";
+}
+home.addEventListener('click',displayHomeDetails);
 
 
 

@@ -59,7 +59,7 @@ font-size: 19px;
    font-size: 16px;
    font-family: sans-serif;
  }
- button {
+ /*button {
     float:right;
     background-color: orange;
     color:white;
@@ -67,17 +67,23 @@ font-size: 19px;
     position: relative;
     
     
- }
+ }*/
  #booksList{
    font-size: 20px;
-   display: block;
+   
    font-family: sans-serif;
+   
+   
 
  }
+ 
+
 
 
  #main{
    width: 100px;
+   display: none;
+
 
  }
 
@@ -85,15 +91,41 @@ font-size: 19px;
    width: 300px;
    border-color: black;
    border-radius: 5px;
-   background-color: darksalmon;
+   
 
  }
  #booksDetails{
    width: 680px;
-  background-color: rgba(213, 29, 41, 0.748);
+  background-color: rgba(243, 237, 238, 0.748);
   margin-left: 320px;
   margin-top: -415px;
-  box-shadow: 3px 3px 10px 4px rgb(70, 44, 49);
+  /*box-shadow: 3px 3px 10px 4px rgb(70, 44, 49);*/
+ }
+ #logIn input {
+   font-size: 16px;
+   border: 0;
+   outline: none;
+   height: 25px;
+   
+   
+ }
+ #btn{
+   font-size: 18px;
+   margin: 20px 0;
+   padding:10px 15px;
+ }
+ #signUp input {
+   font-size: 16px;
+   border: 0;
+   outline: none;
+   height: 25px;
+ }
+ #signUp {
+   display: none;
+ }
+ #aboutUs{
+  display:none;
+
  }
 
 
