@@ -3,7 +3,7 @@
 ​
 ## Description
 ​
-This is  books website,that displays the details of different books and has a filter property in the search form that displays the title of the book searched.
+This is  books website,that displays the details of different books and has a filter property in the search form that displays the title of the book searched and it's details.
 -The live link for the project is:https://vercel.com/iddahodhiambo/phase-1-project
 ​
 # Author

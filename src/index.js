@@ -182,6 +182,4 @@ contactUsListItem.addEventListener('click',makeContactUsActive);
 
 
 
-
-
     
