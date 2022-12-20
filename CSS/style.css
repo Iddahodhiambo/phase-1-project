@@ -6,7 +6,7 @@ body {
 
 nav {
     background-color:#142b47;;
-    height:  90px;
+    height:  110px;
     width: 100%;
     overflow: auto;
     margin-top: 0;
@@ -19,7 +19,9 @@ nav {
     line-height: 60px;
  }
  nav li{
-    float: left;
+    text-align: center;
+    font-size: medium;
+    position: center;
  }
  nav ul li{
     display:inline-block;
@@ -59,28 +61,17 @@ font-size: 19px;
    font-size: 16px;
    font-family: sans-serif;
  }
- /*button {
-    float:right;
-    background-color: orange;
-    color:white;
-    font-family:sans-serif;
-    position: relative;
+ 
     
     
- }*/
+ 
  #booksListDiv{
    font-size: 20px;
    width: 300px;
    margin-right: 1000px;
    font-family: sans-serif;
    
-   
-
  }
- 
-
-
-
  #main{
    width: 100px;
    display: none;
@@ -122,18 +113,16 @@ font-size: 19px;
  }
  #aboutUs{
   display:none;
+  text-indent: 0%;
 
  }
  #contactUsForm {
   display: none
  }
-
-
-
- .container {
+.container {
   width: 80%;
   height: 610px;
-  background: aqua;
+  /*background: aqua;*/
   margin: auto;
   padding: 10px;
 }
@@ -141,7 +130,7 @@ font-size: 19px;
 .one {
   width: 15%;
   height: 600px;
-  background: red;
+  background:orangered;
   float: left;
 }
 
@@ -149,5 +138,9 @@ font-size: 19px;
   margin-left: 15%;
   height: 600px;
   background-color: rgba(243, 237, 238, 0.748);
+}
+#header{
+  font-size: larger;
+  text-decoration-color:white;
 }
 

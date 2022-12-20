@@ -1,4 +1,4 @@
-
+//making search form active
 function searchForm(){
     const searchText = document.getElementById("searchText");
     displayNewList(searchText.value);
@@ -174,6 +174,10 @@ contactUsForm.addEventListener('submit',function(event) {
 
 });
 contactUsListItem.addEventListener('click',makeContactUsActive);
+
+
+
+
 
 
 
