@@ -117,8 +117,11 @@ font-size: 19px;
  }
  #aboutUs{
   display:none;
-  color: orangered;
-  text-shadow: #142b47;
+  background-color: black;
+  text-indent: 0ch;
+  font-family: sans-serif;
+  font-size: larger;
+  
 
  }
  #contactUsForm {
@@ -148,10 +151,15 @@ font-size: 19px;
 #header{
   font-size:x-large;
   color:orangered;
+  
   height: 10px;
   margin-left: 20px;
   margin-bottom: 20px;
   text-decoration: wavy;
+}
+#contactUsButton{
+  display: flex;
+  background-color: orangered;
 }
   
 
