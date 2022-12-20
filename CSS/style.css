@@ -3,6 +3,9 @@ body {
     
     background-color:skyblue
 }
+#nav {
+  text-align: justify;
+}
 
 nav {
     background-color:#142b47;;
@@ -21,7 +24,7 @@ nav {
  nav li{
     text-align: center;
     font-size: medium;
-    position: center;
+    position: relative;
  }
  nav ul li{
     display:inline-block;
@@ -75,6 +78,7 @@ font-size: 19px;
  #main{
    width: 100px;
    display: none;
+   
 
 
  }
@@ -113,7 +117,8 @@ font-size: 19px;
  }
  #aboutUs{
   display:none;
-  text-indent: 0%;
+  color: orangered;
+  text-shadow: #142b47;
 
  }
  #contactUsForm {
@@ -138,9 +143,15 @@ font-size: 19px;
   margin-left: 15%;
   height: 600px;
   background-color: rgba(243, 237, 238, 0.748);
+  
 }
 #header{
-  font-size: larger;
-  text-decoration-color:white;
+  font-size:x-large;
+  color:orangered;
+  height: 10px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  text-decoration: wavy;
 }
+  
 
