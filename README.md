@@ -4,6 +4,7 @@
 ## Description
 ​
 This is  books website,that displays the details of different books and has a filter property in the search form that displays the title of the book searched.
+-The live link for the project is:https://vercel.com/iddahodhiambo/phase-1-project
 ​
 # Author
 ​
@@ -49,6 +50,7 @@ In order for you to use the content on this repo ensure you have the following:
         code .
 ​
 ## Running the application
+
 ​   
 - Right click on the `index.html` and navigate to `Open With Live Server` option, to open the application on your browser.
 - Repeat the steps on the `Features` section above.
