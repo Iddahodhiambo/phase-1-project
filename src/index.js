@@ -175,10 +175,7 @@ contactUsForm.addEventListener('submit',function(event) {
 });
 contactUsListItem.addEventListener('click',makeContactUsActive);
 
-const button = document.createElement('button')
- button.innerText = "Buy Book"
- 
- const list =document.getElementById()
+
 
 
 
